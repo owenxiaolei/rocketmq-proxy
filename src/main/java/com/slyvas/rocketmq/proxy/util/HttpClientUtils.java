@@ -1,4 +1,4 @@
-package com.hwy.rocketmq.proxy.util;
+package com.slyvas.rocketmq.proxy.util;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,10 +1,10 @@
-package com.hwy.rocketmq.proxy.config;
+package com.slyvas.rocketmq.proxy.config;
 
 import java.util.Map;
 
 /**
  * rocketMQ 代理配置
- * @author zhangxiaolei
+ * @author slyvas
  *
  */
 public class RocketMQProxyConfig {

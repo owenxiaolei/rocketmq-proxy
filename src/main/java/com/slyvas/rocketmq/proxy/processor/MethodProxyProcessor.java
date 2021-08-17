@@ -1,8 +1,8 @@
-package com.hwy.rocketmq.proxy.processor;
+package com.slyvas.rocketmq.proxy.processor;
 
 /**
  * 代理方法处理器
- * @author zhangxiaolei
+ * @author slyvas
  *
  */
 public interface MethodProxyProcessor {

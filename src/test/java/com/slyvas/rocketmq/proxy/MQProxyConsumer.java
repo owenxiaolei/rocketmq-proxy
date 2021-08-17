@@ -1,4 +1,4 @@
-package com.hwy.rocketmq.proxy;
+package com.slyvas.rocketmq.proxy;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +10,7 @@ import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerOrderly;
 import org.apache.rocketmq.common.message.MessageExt;
 
-import com.hwy.rocketmq.proxy.config.RocketMQProxyConfig;
+import com.slyvas.rocketmq.proxy.config.RocketMQProxyConfig;
 
 public class MQProxyConsumer {
 
@@ -18,7 +18,7 @@ public class MQProxyConsumer {
 		
 		Map<String, String> ipMappings = new HashMap<String, String>();
 		//key：内网ip   value：外网ip
-		ipMappings.put("10.0.8.133", "49.234.48.57");
+		ipMappings.put("x.x.x.x", "x.x.x.x");
 		//设置内外网ip映射关系
 		RocketMQProxyConfig.getInstance().setIpMappings(ipMappings);
 		//开启内外网ip转换
@@ -28,7 +28,7 @@ public class MQProxyConsumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("please_rename_unique_group_name");
 
     	// 设置NameServer的地址
-        consumer.setNamesrvAddr("49.234.48.57:9876");
+        consumer.setNamesrvAddr("x.x.x.x:9876");
 
     	// 订阅一个或者多个Topic，以及Tag来过滤需要消费的消息
         consumer.subscribe("TopicTest", "*");

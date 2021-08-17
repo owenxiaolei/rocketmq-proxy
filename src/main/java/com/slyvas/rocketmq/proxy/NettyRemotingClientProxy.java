@@ -1,4 +1,4 @@
-package com.hwy.rocketmq.proxy;
+package com.slyvas.rocketmq.proxy;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -7,10 +7,10 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hwy.rocketmq.proxy.processor.AddrListParamProcessor;
-import com.hwy.rocketmq.proxy.processor.AddrSingleParamProcessor;
-import com.hwy.rocketmq.proxy.processor.GetNameServerAddressListProcessor;
-import com.hwy.rocketmq.proxy.processor.MethodProxyProcessor;
+import com.slyvas.rocketmq.proxy.processor.AddrListParamProcessor;
+import com.slyvas.rocketmq.proxy.processor.AddrSingleParamProcessor;
+import com.slyvas.rocketmq.proxy.processor.GetNameServerAddressListProcessor;
+import com.slyvas.rocketmq.proxy.processor.MethodProxyProcessor;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -18,7 +18,7 @@ import net.sf.cglib.proxy.MethodProxy;
 
 /**
  * NettyRemotingClient 代理类， 处理内外网IP转换
- * @author zhangxiaolei
+ * @author slyvas
  *
  */
 public class NettyRemotingClientProxy implements MethodInterceptor {

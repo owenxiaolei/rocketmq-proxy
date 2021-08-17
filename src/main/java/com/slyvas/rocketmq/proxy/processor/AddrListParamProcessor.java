@@ -1,13 +1,13 @@
-package com.hwy.rocketmq.proxy.processor;
+package com.slyvas.rocketmq.proxy.processor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hwy.rocketmq.proxy.config.ConfigData;
+import com.slyvas.rocketmq.proxy.config.ConfigData;
 
 /**
  * 连接地址列表list参数处理
- * @author zhangxiaolei
+ * @author slyvas
  *
  */
 public class AddrListParamProcessor implements MethodProxyProcessor {

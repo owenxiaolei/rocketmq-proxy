@@ -1,7 +1,8 @@
-package com.hwy.rocketmq.proxy.config;
+package com.slyvas.rocketmq.proxy.config;
 
 import com.google.gson.Gson;
-import com.hwy.rocketmq.proxy.util.HttpClientUtils;
+import com.slyvas.rocketmq.proxy.util.HttpClientUtils;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /**
  * 配置信息
  *
- * @author zhangxiaolei
+ * @author slyvas
  */
 public class ConfigData {
 
@@ -144,7 +145,7 @@ public class ConfigData {
 	/**
 	 * 搜索类型
 	 *
-	 * @author zhangxiaolei
+	 * @author slyvas
 	 */
 	private enum SearchType {
 		/**

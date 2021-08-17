@@ -1,10 +1,10 @@
-package com.hwy.rocketmq.proxy.processor;
+package com.slyvas.rocketmq.proxy.processor;
 
-import com.hwy.rocketmq.proxy.config.ConfigData;
+import com.slyvas.rocketmq.proxy.config.ConfigData;
 
 /**
  * 单个连接地址参数处理
- * @author zhangxiaolei
+ * @author slyvas
  *
  */
 public class AddrSingleParamProcessor implements MethodProxyProcessor {

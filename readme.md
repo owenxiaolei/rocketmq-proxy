@@ -1,0 +1,7 @@
+通过代理NettyRemotingClient，实现rocketmq原生不支持外网通讯的问题
+
+代理会进行内外网IP的转换处理，实现producer与consumer可以通过外网IP与broker、namesvr的通讯， rocketmq原生集群依然维持内网通讯逻辑
+
+使用Producer或Consumer之前
+RocketMQProxyConfig.setIpTransform() 设置是否需要ip内外网转换功能， 默认不开启转换功能
+RocketMQProxyConfig.setRemoteConfigUrl() 设置内外网映射关系数据远程下载地址    
